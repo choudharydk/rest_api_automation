@@ -1,0 +1,6 @@
+npm-debug.log
+
+node_modules
+
+mochawesome-report
+package-lock.json

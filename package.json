@@ -1,0 +1,23 @@
+{
+  "name": "reflektion_api_automation",
+  "version": "1.0.0",
+  "description": "Reflektion API Automation",
+  "main": "test/main.spec.js",
+  "author": "Dhruv",
+  "license": "ISC",
+  "dependencies": {
+    "chai-json-schema-ajv": "^5.0.0",
+    "faker": "^4.1.0",
+    "mochawesome": "^3.0.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.5.3",
+    "request": "^2.88.0",
+    "npm": "^6.4.1",
+    "request-promise": "^4.2.2"
+  },
+  "scripts": {
+    "test": "test/run.sh"
+  }
+}
