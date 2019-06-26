@@ -31,13 +31,19 @@ function requestPromiseQuery(url, method, headers, data) {
  * Internal http request generator
  * @param {*} url endpoint to be hit
  * @param {*} method http method
+ * @param {*} headers headers to be set
  * @param {*} callback either response or error
  */
-function requestQuery(url,method,callback){
-
-	return request(url, method, function (err, response) {
-                   callback(err,response)
-                });
+function requestQuery(url, method,headers, callback) {
+	let options = {
+		url: url,
+		method: method,
+		headers: headers,
+		strictSSL: false
+	}
+	return request(options, function (err, response) {
+		callback(err, response)
+	});
 }
 
 module.exports = {
