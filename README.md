@@ -18,7 +18,8 @@ verify your installation
  * node --version
 
 # git clone 
-  * copy the project in your directory from local environment if available
+  * copy the project in your directory from local environment if available if not, follow below step
+  * https://github.com/choudharydk/reflektion_api_automation.git
 
 # to install the application :
 npm install && update
