@@ -1,3 +1,8 @@
+/**
+ *@author Dhruv Choudhary <dhruv.1si12cs038@gmail.com>
+ @created 2019-25-6
+ */
+
 const chai = require('chai');
 const expect = chai.expect;
 const should = chai.should;
@@ -13,14 +18,14 @@ var logger = log4js.getLogger();
 
 
 describe("GET Service API ", () => {
-    logger.info("GET SErvice API TEST Starts")
+    
     let baseUrl = config.baseUrl;
     let url;
     let headers = header.plainHeader();
 
     it("verify the status code is 200 and should contain at leats 100 records ", (done) => {
+        logger.info("GET Service API TEST Starts")
         let uri = "/posts";
-
         url = baseUrl + uri;
         console.log("url is", url)
         request
@@ -93,16 +98,17 @@ describe("GET Service API ", () => {
 
                 } else if (!(/^2/.test('' + resp.statusCode))) { // Status Codes other than 2xx
                     //  console.log("status code error for empty data is ",resp, resp.statusCode)
-                    logger.info("response in GET Service API with invalid url ", url, "is ", JSON.stringify(resp.body))
+                    logger.info("response in GET Service API with invalid url ", url, "is ", JSON.stringify(resp.body)) 
                     logger.info("status code  in GET Service API with invalid url ", url, "is ", JSON.stringify(resp.statusCode))
 
                     expect(resp.statusCode).to.equal(404)
+                    logger.info("GET SErvice API TEST ENDS")
+                    logger.info("********************************************************************")
                     done();
 
                 }
             })
     })
 
-    logger.info("GET SErvice API TEST ENDS")
-    logger.info("*****************************************")
+   
 })
