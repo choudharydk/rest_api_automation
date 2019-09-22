@@ -1,4 +1,4 @@
-# Reflektion backend api automation
+# backend api automation
 
 #install visual studio code for writing codes
  (32bit for ubuntu)
@@ -8,8 +8,8 @@
   run the executable code, it will get launch
 
 #create a folder : 
- * mkdir reflektion_api_automation
- * cd reflektion_api_automation
+ * mkdir api_automation
+ * cd api_automation
 
 #install NodeJs in your system
  * wget -qO- https://deb.nodesource.com/setup_8.x | sudo bash -
@@ -19,7 +19,7 @@ verify your installation
 
 # git clone 
   * copy the project in your directory from local environment if available if not, follow below step
-  * https://github.com/choudharydk/reflektion_api_automation.git
+  * https://github.com/choudharydk/api_automation.git
 
 # to install the application :
 npm install && update
